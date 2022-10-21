@@ -7,7 +7,7 @@
  */
 int (*get_print(char s))(va_list,flags_t *)
 {
-	ph func_rr[] = {
+	ph func_arr[] = {
 		{'i', print_int},
 		{'s', print_string},
 		{'c', print_char},
@@ -16,7 +16,7 @@ int (*get_print(char s))(va_list,flags_t *)
 		{'x', print_hex},
 		{'X', print_hex_big},
 		{'b', print_binary},
-		{'o', printoctal},
+		{'o', print_octal},
 		{'R', print_rot13},
 		{'r', print_rev},
 		{'S', print_bigS},
