@@ -5,7 +5,7 @@
  * @format: format string containing the characters and specifiers.
  * Return: length of formatted output string.
  */
-int _printf(const char *format,..)
+int _printf(const char *format,...)
 {
 	int (*pfunc)(va_list,flags_t *);
 	const char *p;
